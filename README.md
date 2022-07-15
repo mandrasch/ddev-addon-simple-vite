@@ -7,7 +7,7 @@ Work in progress, simple DDEV addon for Vite 3 / Vite 2.
 Install it via:
 
 ```bash
-ddev get mandrasch/ddev-simple-vite
+ddev get mandrasch/ddev-addon-simple-vite
 ddev restart
 ```
 
