@@ -1,4 +1,7 @@
-[![tests](https://github.com/mandrasch/ddev-simple-vite/actions/workflows/tests.yml/badge.svg)](https://github.com/mandrasch/ddev-simple-vite/actions/workflows/tests.yml) ![project is maintained](https://img.shields.io/maintenance/yes/2022.svg)
+[![tests](https://github.com/mandrasch/ddev-simple-vite/actions/workflows/tests.yml/badge.svg)](https://github.com/mandrasch/ddev-simple-vite/actions/workflows/tests.yml) ![project is maintained](https://img.shields.io/maintenance/yes/
+2022.svg)
+
+# ddev-simple-vite
 
 Work in progress, simple DDEV addon for vite 3 / vite 2.
 
@@ -12,7 +15,7 @@ ddev restart
 All it does is exposing the vite port via the `docker-compose.vite-simple.yaml` file, it can be accessed from outside of Docker afterwards. 
 
 
-# vite 3 usage
+## vite 3 usage
 
 After installing this addon you need to use the following `vite.config.js`:
 
@@ -25,7 +28,7 @@ After installing this addon you need to use the following `vite.config.js`:
   },
 ```
 
-# vite 2 usage
+## vite 2 usage
 
 You need to use the same `server:{}`-config as above in `vite.config.js`. 
 
