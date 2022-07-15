@@ -1,4 +1,4 @@
-[![tests](https://github.com/mandrasch/ddev-simple-vite/actions/workflows/tests.yml/badge.svg)](https://github.com/mandrasch/ddev-simple-vite/actions/workflows/tests.yml) ![project is maintained](https://img.shields.io/maintenance/yes/2022.svg)
+[![tests](https://github.com/mandrasch/ddev-addon-simple-vite/actions/workflows/tests.yml/badge.svg)](https://github.com/mandrasch/ddev-addon-simple-vite/actions/workflows/tests.yml) ![project is maintained](https://img.shields.io/maintenance/yes/2022.svg)
 
 # ddev-simple-vite (DDEV addon)
 
