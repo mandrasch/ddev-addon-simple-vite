@@ -11,9 +11,9 @@ ddev get mandrasch/ddev-simple-vite
 ddev restart
 ```
 
-All it does is exposing the Vite port via the `docker-compose.vite-simple.yaml` configuration file, it can be accessed from outside of Docker afterwards (with help of DDEV router). 
+## Vite 3
 
-## Vite 3 usage
+## Vite 3 configuration
 
 After installing this addon you need to use the following `vite.config.js`-settings for `server:{}`:
 
@@ -30,7 +30,25 @@ export default defineConfig({
 });
 ```
 
-## Vite 2 usage
+## PHP frontend configuration
+
+Your PHP framework then needs to point to the following vite url in local development:
+
+```bash
+https://<your-project.ddev.site>:5173
+```
+
+The HTML output in local development should be like
+
+```
+<script type="module" src="https://<your-project.ddev.site>:5173/@vite/client"></script>
+```
+
+Every PHP framework (or framework plugin) does this slightly different, some even need some custom adjustments. Check your browsers developer tools console / network tab for errors.
+
+## Vite 2
+
+## Vite 2 configuration
 
 You need to use the same `server:{}`-config as above in `vite.config.js`. The default port of Vite 2 is `3000`. Either change it in `vite.config.js` to `5173`:
 
@@ -61,13 +79,22 @@ services:
       - HTTPS_EXPOSE=${DDEV_ROUTER_HTTPS_PORT}:80,${DDEV_MAILHOG_HTTPS_PORT}:8025,3000:3000
 ```
 
+## PHP frontend configuration
+
+See above, same as Vite 3.
+
 ## Example repositories
 
 - https://github.com/mandrasch/vite-php-setup-ddev-test
 
-## Resources
+## Technical details / Resources
 
+- All it does is exposing the Vite port via the `docker-compose.vite-simple.yaml` configuration file, it can be accessed from outside of Docker afterwards (with help of DDEV router). 
 - https://ddev.readthedocs.io/en/stable/users/extend/custom-compose-files/#docker-composeyaml-examples
+
+## Acknowledgements
+
+Thanks to @rfay, @torenware, @tyler36 (and others) for taking the time to discuss this approach in [torenware/ddev-viteserve/issues/2](https://github.com/torenware/ddev-viteserve/issues/2)!
 
 ## License and credits
 
