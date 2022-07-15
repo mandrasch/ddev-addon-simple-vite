@@ -1,6 +1,6 @@
 [![tests](https://github.com/mandrasch/ddev-simple-vite/actions/workflows/tests.yml/badge.svg)](https://github.com/mandrasch/ddev-simple-vite/actions/workflows/tests.yml) ![project is maintained](https://img.shields.io/maintenance/yes/2022.svg)
 
-Work in progress, simple DDEV addon for vite 3 / vite 2. For usage with vite 2, see below. 
+Work in progress, simple DDEV addon for vite 3 / vite 2.
 
 Install it via:
 
