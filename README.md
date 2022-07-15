@@ -27,7 +27,9 @@ After installing this addon you need to use the following `vite.config.js`:
 
 # vite 2 usage
 
-The default port of vite 2 is `3000`, either change it in `vite.config.js` to `5173` - or change the `docker-compose.vite-simple.yaml` file like this (needs a `ddev restart`):
+You need to use the same `server:{}`-config as above in `vite.config.js`. 
+
+The default port of vite 2 is `3000`. Either change it in `vite.config.js` to `5173` - or change the `docker-compose.vite-simple.yaml` file like this (needs a `ddev restart`):
 
 ```yaml
 #ddev-generated
