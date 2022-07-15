@@ -2,7 +2,7 @@
 
 # ddev-simple-vite (DDEV addon)
 
-Work in progress, simple DDEV addon for vite 3 / vite 2.
+Work in progress, simple DDEV addon for Vite 3 / Vite 2.
 
 Install it via:
 
@@ -11,9 +11,9 @@ ddev get mandrasch/ddev-simple-vite
 ddev restart
 ```
 
-All it does is exposing the vite port via the `docker-compose.vite-simple.yaml` configuration file, it can be accessed from outside of Docker afterwards (with help of DDEV router). 
+All it does is exposing the Vite port via the `docker-compose.vite-simple.yaml` configuration file, it can be accessed from outside of Docker afterwards (with help of DDEV router). 
 
-## vite 3 usage
+## Vite 3 usage
 
 After installing this addon you need to use the following `vite.config.js`-settings for `server`:
 
@@ -30,9 +30,9 @@ export default defineConfig({
 });
 ```
 
-## vite 2 usage
+## Vite 2 usage
 
-You need to use the same `server:{}`-config as above in `vite.config.js`. The default port of vite 2 is `3000`. Either change it in `vite.config.js` to `5173`:
+You need to use the same `server:{}`-config as above in `vite.config.js`. The default port of Vite 2 is `3000`. Either change it in `vite.config.js` to `5173`:
 
 ```javascript
 // ...
