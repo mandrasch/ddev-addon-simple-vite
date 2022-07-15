@@ -1,6 +1,6 @@
 [![tests](https://github.com/mandrasch/ddev-simple-vite/actions/workflows/tests.yml/badge.svg)](https://github.com/mandrasch/ddev-simple-vite/actions/workflows/tests.yml) ![project is maintained](https://img.shields.io/maintenance/yes/2022.svg)
 
-# ddev-simple-vite
+# ddev-simple-vite (DDEV addon)
 
 Work in progress, simple DDEV addon for vite 3 / vite 2.
 
@@ -11,36 +11,42 @@ ddev get mandrasch/ddev-simple-vite
 ddev restart
 ```
 
-All it does is exposing the vite port via the `docker-compose.vite-simple.yaml` file, it can be accessed from outside of Docker afterwards. 
-
+All it does is exposing the vite port via the `docker-compose.vite-simple.yaml` configuration file, it can be accessed from outside of Docker afterwards (with help of DDEV router). 
 
 ## vite 3 usage
 
-After installing this addon you need to use the following `vite.config.js`:
+After installing this addon you need to use the following `vite.config.js`-settings for `server`:
 
 ```javascript
- server: {
-    // respond to all network requests
-    host: '0.0.0.0',
-    strictPort: true,
-    port: 5173
-  },
+// ...
+export default defineConfig({
+  // ...
+  server: {
+      // respond to all network requests
+      host: '0.0.0.0',
+      strictPort: true,
+      port: 5173
+  }
+});
 ```
 
 ## vite 2 usage
 
-You need to use the same `server:{}`-config as above in `vite.config.js`:
+You need to use the same `server:{}`-config as above in `vite.config.js`. The default port of vite 2 is `3000`. Either change it in `vite.config.js` to `5173`:
 
 ```javascript
- server: {
-    // respond to all network requests
-    host: '0.0.0.0',
-    strictPort: true,
-    port: 5173
-  },
+// ...
+export default defineConfig({
+  // ...
+  server: {
+      // respond to all network requests
+      host: '0.0.0.0',
+      strictPort: true,
+      port: 5173
+  }
+});
 ```
-
-The default port of vite 2 is `3000`. Either change it in `vite.config.js` to `5173` - or change the `docker-compose.vite-simple.yaml` file like this (needs a `ddev restart`):
+Or change the `docker-compose.vite-simple.yaml` file like this if you want to use `3000` (needs a `ddev restart`):
 
 ```yaml
 #ddev-generated
@@ -59,7 +65,10 @@ services:
 
 - https://github.com/mandrasch/vite-php-setup-ddev-test
 
+## Resources
+
+- https://ddev.readthedocs.io/en/stable/users/extend/custom-compose-files/#docker-composeyaml-examples
+
 ## License and credits
 
 Created via https://github.com/drud/ddev-addon-template, addon is licensed as Apache License 2.0 (Open Source) as well.
-
