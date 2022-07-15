@@ -13,7 +13,7 @@ ddev restart
 
 ## Vite 3
 
-## Vite 3 configuration
+### Vite 3 configuration
 
 After installing this addon you need to use the following `vite.config.js`-settings for `server:{}`:
 
@@ -30,7 +30,7 @@ export default defineConfig({
 });
 ```
 
-## PHP frontend configuration
+### PHP frontend configuration
 
 Your PHP framework then needs to point to the following vite url in local development:
 
@@ -48,7 +48,7 @@ Every PHP framework (or framework plugin) does this slightly different, some eve
 
 ## Vite 2
 
-## Vite 2 configuration
+### Vite 2 configuration
 
 You need to use the same `server:{}`-config as above in `vite.config.js`. The default port of Vite 2 is `3000`. Either change it in `vite.config.js` to `5173`:
 
@@ -79,7 +79,7 @@ services:
       - HTTPS_EXPOSE=${DDEV_ROUTER_HTTPS_PORT}:80,${DDEV_MAILHOG_HTTPS_PORT}:8025,3000:3000
 ```
 
-## PHP frontend configuration
+### PHP frontend configuration
 
 See above, same as Vite 3.
 
