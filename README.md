@@ -6,6 +6,7 @@ Install it via:
 
 ```bash
 ddev get mandrasch/ddev-simple-vite
+ddev restart
 ```
 
 All it does is exposing the vite port via the `docker-compose.vite-simple.yaml` file, it can be accessed from outside of Docker afterwards. 
