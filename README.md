@@ -15,7 +15,7 @@ All it does is exposing the Vite port via the `docker-compose.vite-simple.yaml` 
 
 ## Vite 3 usage
 
-After installing this addon you need to use the following `vite.config.js`-settings for `server`:
+After installing this addon you need to use the following `vite.config.js`-settings for `server:{}`:
 
 ```javascript
 // ...
