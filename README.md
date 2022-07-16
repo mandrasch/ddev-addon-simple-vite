@@ -109,3 +109,5 @@ Other approaches
 ## License and credits
 
 Created via https://github.com/drud/ddev-addon-template, addon is licensed as Apache License 2.0 (Open Source) as well.
+
+See [My DDEV lab](https://my-ddev-lab.mandrasch.eu/) for more DDEV-related information.
