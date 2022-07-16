@@ -46,9 +46,10 @@ The HTML output in local development should be like
 
 Every PHP framework (or framework plugin) does this slightly different, some even need some custom adjustments. Check your browsers developer tools console / network tab for errors.
 
-Resources for various frameworks:
+Resources for various PHP frameworks:
 
-- ...
+- CraftCMS Vite plugin: https://nystudio107.com/docs/vite/#using-ddev
+  - (you should switch `ports` with `expose` though)
 
 Example repositories / projects:
 
