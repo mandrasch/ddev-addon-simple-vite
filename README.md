@@ -2,7 +2,9 @@
 
 # ddev-simple-vite (DDEV addon)
 
-Work in progress, simple DDEV addon for Vite 3 / Vite 2.
+🚧 Work in progress 🚧 
+
+Simple DDEV addon for Vite 3 / Vite 2.
 
 Install it via:
 
@@ -44,16 +46,19 @@ The HTML output in local development should be like
 <script type="module" src="https://<your-project.ddev.site>:5173/@vite/client"></script>
 ```
 
-Every PHP framework (or framework plugin) does this slightly different, some even need some custom adjustments. Check your browsers developer tools console / network tab for errors.
+With the correct configuration just run `ddev exec npm run dev` as usual (`ddev exec npm install` is needed beforehand of course.).
+
+Every PHP framework (or framework plugin) does this slightly different, some even need some custom adjustments / may not currently capable to do this out of the box. Check your browsers developer tools console / network tab for errors.
+
+Example repositories / projects:
+
+- https://github.com/mandrasch/vite-php-setup-ddev-test
 
 Resources for various PHP frameworks:
 
 - CraftCMS Vite plugin: https://nystudio107.com/docs/vite/#using-ddev
   - (you should switch `ports` with `expose` though)
-
-Example repositories / projects:
-
-- https://github.com/mandrasch/vite-php-setup-ddev-test
+- Laravel new official vite integration: https://laravel.com/docs/9.x/vite (Currently no way to set a DEV_SERVER_URL as in third party plugin https://laravel-vite.dev/)
 
 ## Vite 2
 
