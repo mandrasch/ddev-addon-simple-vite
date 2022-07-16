@@ -36,7 +36,9 @@ export default defineConfig({
 
 ### PHP frontend configuration
 
-Your PHP framework then needs to point to the following vite url in local development:
+Start vite via `ddev exec npm run dev` as usual (`ddev exec npm install` is needed beforehand of course. :wink:).
+
+Your PHP framework needs to point to the following vite url in local development:
 
 ```bash
 https://<your-project.ddev.site>:5173
@@ -47,8 +49,6 @@ The HTML output in local development should be like
 ```
 <script type="module" src="https://<your-project.ddev.site>:5173/@vite/client"></script>
 ```
-
-With the correct configuration just run `ddev exec npm run dev` as usual (`ddev exec npm install` is needed beforehand of course.).
 
 Every PHP framework (or framework plugin) does this slightly different, some even need some custom adjustments / may not currently capable to do this out of the box. Check your browsers developer tools console / network tab for errors.
 
