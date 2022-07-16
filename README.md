@@ -46,6 +46,14 @@ The HTML output in local development should be like
 
 Every PHP framework (or framework plugin) does this slightly different, some even need some custom adjustments. Check your browsers developer tools console / network tab for errors.
 
+Resources for various frameworks:
+
+- ...
+
+Example repositories / projects:
+
+- https://github.com/mandrasch/vite-php-setup-ddev-test
+
 ## Vite 2
 
 ### Vite 2 configuration
@@ -83,10 +91,6 @@ services:
 
 See above, same as Vite 3.
 
-## Example repositories
-
-- https://github.com/mandrasch/vite-php-setup-ddev-test
-
 ## Technical details / Resources
 
 - All it does is exposing the Vite port via the `docker-compose.vite-simple.yaml` configuration file, it can be accessed from outside of Docker afterwards (with help of DDEV router). 
@@ -95,6 +99,11 @@ See above, same as Vite 3.
 ## Acknowledgements
 
 Thanks to @rfay, @torenware, @tyler36 (and others) for taking the time to discuss this approach in [torenware/ddev-viteserve/issues/2](https://github.com/torenware/ddev-viteserve/issues/2)!
+
+Other approaches
+
+- https://github.com/iammati/vite-ddev
+- https://github.com/torenware/ddev-viteserve
 
 ## License and credits
 
