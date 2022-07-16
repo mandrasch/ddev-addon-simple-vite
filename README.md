@@ -50,7 +50,7 @@ The HTML output in local development should be like
 <script type="module" src="https://<your-project-name>.ddev.site:5173/@vite/client"></script>
 ```
 
-Every PHP framework (or framework plugin) does this slightly different, some even need some custom adjustments / may not currently capable to do this out of the box. Check your browsers developer tools console / network tab for errors.
+Every PHP framework (or framework plugin) does this slightly different, some even need some custom adjustments or may not be currently capable to do this out of the box. Check your browsers developer tools console / network tab for errors.
 
 Example repositories / projects:
 
@@ -60,7 +60,7 @@ Resources for various PHP frameworks:
 
 - CraftCMS Vite plugin: https://nystudio107.com/docs/vite/#using-ddev
   - (you should switch `ports` with `expose` though)
-- Laravel new official vite integration: https://laravel.com/docs/9.x/vite (Currently no way to set a DEV_SERVER_URL as in third party plugin https://laravel-vite.dev/)
+- Laravel new official vite integration: https://laravel.com/docs/9.x/vite (Currently no way to set a DEV_SERVER_URL as in third party plugin https://laravel-vite.dev/. Don't use `hmr`, see: https://github.com/torenware/ddev-viteserve/issues/2)
 
 ## Vite 2
 
