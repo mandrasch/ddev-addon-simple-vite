@@ -13,7 +13,7 @@ ddev get mandrasch/ddev-addon-simple-vite
 ddev restart
 ```
 
-Adds [`docker-compose.simple-vite.yaml`](https://github.com/mandrasch/ddev-addon-simple-vite/blob/main/docker-compose.simple-vite.yaml) to your `.ddev` folder. This file takes care of exposing vites port through DDEV router (reverse proxy). 
+Adds [`docker-compose.simple-vite.yaml`](https://github.com/mandrasch/ddev-addon-simple-vite/blob/main/docker-compose.simple-vite.yaml) to your `.ddev` folder. This file takes care of exposing vites port through DDEV router (reverse proxy) so that it can be accessed via `https://<your-project-name>.ddev.site:5173`. See [DDEV docs](https://ddev.readthedocs.io/en/stable/users/extend/custom-compose-files/#docker-composeyaml-examples) for more information. 
 
 ## Vite 3
 
@@ -98,11 +98,6 @@ services:
 ### PHP frontend configuration
 
 See above, same as Vite 3.
-
-## Technical details / Resources
-
-- All it does is exposing the Vite port via the `docker-compose.vite-simple.yaml` configuration file, it can be accessed from outside of Docker afterwards (with help of DDEV router). 
-- https://ddev.readthedocs.io/en/stable/users/extend/custom-compose-files/#docker-composeyaml-examples
 
 ## Acknowledgements
 
