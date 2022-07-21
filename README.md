@@ -60,7 +60,7 @@ Resources for various PHP frameworks:
 
 - CraftCMS Vite plugin: https://nystudio107.com/docs/vite/#using-ddev
   - (you should switch `ports` with `expose` though)
-- Laravel new official vite integration: https://laravel.com/docs/9.x/vite (Currently no way to set a DEV_SERVER_URL as in third party plugin https://laravel-vite.dev/. Don't use `hmr`, see: https://github.com/torenware/ddev-viteserve/issues/2)
+- Laravel new official vite integration: https://laravel.com/docs/9.x/vite (Currently no way to set a DEV_SERVER_URL as in third party plugin https://laravel-vite.dev/. Not using `server.hmr` was suggested here https://github.com/torenware/ddev-viteserve/issues/2, but laravel vite team suggested otherwise. See: https://github.com/laravel/vite-plugin/issues/83)
 
 ## Vite 2
 
