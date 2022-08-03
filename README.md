@@ -2,6 +2,7 @@
 
 # ddev-simple-vite (DDEV addon)
 
+
 🚧 Work in progress 🚧 
 
 Simple DDEV addon for Vite 3 / Vite 2.
@@ -15,7 +16,7 @@ ddev restart
 
 Adds [`docker-compose.simple-vite.yaml`](https://github.com/mandrasch/ddev-addon-simple-vite/blob/main/docker-compose.simple-vite.yaml) to your `.ddev` folder. This file takes care of exposing vites port through DDEV router (reverse proxy) so that it can be accessed via `https://<your-project-name>.ddev.site:5173`. See [DDEV docs](https://ddev.readthedocs.io/en/stable/users/extend/custom-compose-files/#docker-composeyaml-examples) for more information. 
 
-For a more extended approach see (torenware/ddev-viteserve)[https://github.com/torenware/ddev-viteserve].
+ℹ️ For a more extended approach see [torenware/ddev-viteserve](https://github.com/torenware/ddev-viteserve).
 
 ## Vite 3
 
