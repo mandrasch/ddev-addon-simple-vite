@@ -1,3 +1,18 @@
+## Not actively maintained
+
+Please consider using [torenware/viteserve](https://github.com/torenware/ddev-viteserve) and see more information here: https://my-ddev-lab.mandrasch.eu/tutorials/nodejs-tools/vite.html. 🚀
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<hr>
+
 [![tests](https://github.com/mandrasch/ddev-addon-simple-vite/actions/workflows/tests.yml/badge.svg)](https://github.com/mandrasch/ddev-addon-simple-vite/actions/workflows/tests.yml) ![project is maintained](https://img.shields.io/maintenance/yes/2022.svg)
 
 # ddev-simple-vite (DDEV addon)
