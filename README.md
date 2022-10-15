@@ -1,6 +1,6 @@
 ## Not actively maintained
 
-Please consider using [torenware/viteserve](https://github.com/torenware/ddev-viteserve) and see more information here: https://my-ddev-lab.mandrasch.eu/tutorials/nodejs-tools/vite.html. 🚀
+Please consider using [torenware/ddev-viteserve](https://github.com/torenware/ddev-viteserve) and see more information here: https://my-ddev-lab.mandrasch.eu/tutorials/nodejs-tools/vite.html. 🚀
 
 <br>
 <br>
