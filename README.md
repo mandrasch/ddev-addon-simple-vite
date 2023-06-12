@@ -1,3 +1,18 @@
+## Not needed anymore
+
+You can just set this now via `.ddev/config.yaml`:
+
+```yaml
+nodejs_version: "18"
+# Expose vite port
+# https://ddev.readthedocs.io/en/latest/users/extend/customization-extendibility/#exposing-extra-ports-via-ddev-router
+web_extra_exposed_ports:
+  - name: node-vite
+    container_port: 5173
+    http_port: 5172
+    https_port: 5173
+```
+
 ## Not actively maintained
 
 Please consider using [torenware/ddev-viteserve](https://github.com/torenware/ddev-viteserve) and see more information here: https://my-ddev-lab.mandrasch.eu/tutorials/nodejs-tools/vite.html. 🚀
