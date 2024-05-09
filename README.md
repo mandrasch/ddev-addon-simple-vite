@@ -1,6 +1,6 @@
-## Not needed anymore
+## This add-on is not needed anymore / not maintained anymore
 
-You can just set this now via `.ddev/config.yaml`:
+You can now just expose ports via `.ddev/config.yaml`, no need to use a docker-compose file anymore:
 
 ```yaml
 nodejs_version: "18"
@@ -13,9 +13,10 @@ web_extra_exposed_ports:
     https_port: 5173
 ```
 
-## Not actively maintained
+See for more information: 
 
-Please consider using [torenware/ddev-viteserve](https://github.com/torenware/ddev-viteserve) and see more information here: https://my-ddev-lab.mandrasch.eu/tutorials/nodejs-tools/vite.html. 🚀
+- https://ddev.readthedocs.io/en/stable/users/extend/customization-extendibility/#exposing-extra-ports-via-ddev-router
+- https://ddev.com/blog/working-with-vite-in-ddev/
 
 <br>
 <br>
