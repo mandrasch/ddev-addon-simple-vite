@@ -5,7 +5,6 @@ You can now just expose ports via `.ddev/config.yaml`, no need to use a docker-c
 ```yaml
 nodejs_version: "18"
 # Expose vite port
-# https://ddev.readthedocs.io/en/latest/users/extend/customization-extendibility/#exposing-extra-ports-via-ddev-router
 web_extra_exposed_ports:
   - name: node-vite
     container_port: 5173
